@@ -1,0 +1,28 @@
+Save the Space Cats
+-create Nav with 4 lessons, the mission, about page
+-in total have 7 pages- home, lessons 1-4, the mission, about and reward page
+-have three question quizs on each lesson and then 5 questions on the mission
+-A connection to a server and makes requests from the front end (express and axios)
+
+desgin
+-create as gender neutral as possible so it will appeal to all kids
+-make sure instructions are simple and easy to understand
+-stress the importance of a mission for kids
+
+Lesson 1
+Computer parts and their functions
+(they will need to identify three computer part correctly)
+
+Lesson 2 
+input vs output decivces
+(identify three decivces if they are input or output)
+
+Lesson 3
+Basic coding languages and their functions
+(match the description of an language to its name)
+
+Lesson 4
+teach them to write a single line of javascript
+console.log("we fixed the ship!")
+
+The Mission
