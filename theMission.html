@@ -12,7 +12,7 @@
 		<a href="./lessonThree.html">Lesson 3</a>
 		<a href="./lessonFour.html">Lesson 4</a>
 		<a href="./theMission.html" class="active">The Mission</a>
-		<a href="./about.html">About</a>
+		<a href="./about.html">AbouT</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		  <i class="fa fa-bars"></i>
 		</a>
@@ -20,24 +20,184 @@
 
 	<content>
 		<h1 class="titleOfPage" style="color:#bafc03">THE MISSION</h1>
-        <h2 class="center" class="blackBackground" style="color:white">
-			<img class="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFES1iMkf0Wb_mzEOgvKMluw_DM4_64D6iKQ&usqp=CAU"/>
+        <h2 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
+			<img class="center" style="width:250px" style="height:250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFES1iMkf0Wb_mzEOgvKMluw_DM4_64D6iKQ&usqp=CAU"/>
             TIME TO SAVE THE SPACE CATS!!!
         </h2>
 
-		<img class="center" src="surfingCat.png" />
-		<h3 class="blackBackground" style="color:#bafc03">We sent our Space Cats to explore space</h3>
+		<h3 class="blackBackground" id="textCenter" style="color:#bafc03">We sent our Space Cats to explore space</h3>
+		<img class="center" style="width:250px" style="height:200px" src="surfingCat.png" />
 
-		<img class="center" src="planet.png" />
-		<h3 class="blackBackground" style="color:#bafc03">They discovered a new planet!</h3>
+		<h3 class="blackBackground" id="textCenter" style="color:#bafc03">They discovered a new planet!</h3>
+		<img class="center" style="width:250px" style="height:200px" src="planet.png" />
 
-		<img class="center" src="ohnooooo.jfif" />
-		<h3 class="blackBackground" style="color:#bafc03">As they were preparing to go home, their space ship shut down!</h3>
+		<h3 class="blackBackground" id="textCenter" style="color:#bafc03">As they were preparing to go home, their space ship shut down!</h3>
+		<img class="center" style="width:400px" style="height:200px" src="ohnoSpaceMan.jfif" />
 
-		<img class="center" src="spaceShip.PNG" />
-		<h3 class="blackBackground" style="color:#bafc03">We need you to restart the space ship and get them back to Earth!</h3>
+		<h3 class="blackBackground" id="textCenter" style="color:#bafc03">We need you to restart the space ship and get them back to Earth!</h3>
+		<img class="center"  style="width:162.5px" style="height:300px" src="plainspaceship.png" />
 
-		<h3 class="blackBackground" style="color:white">Solve the following questions and complete your mission</h3>
+		<h3 class="blackBackground" id="textCenter" style="color:#bafc03">Solve the following questions and complete your mission</h3>
+
+		<form>
+			<h3 class="blackBackground" style="color:white">First we need to find the control room with computers in it!
+			Look at the images below and pick out the room with computers!</h3>
+
+			<h3 class="blackBackground" style="color:#bafc03">Room 1</h3>
+			<img class="center"  style="width:400px" style="height:400px" src="door.jpg" />
+
+			<h3 class="blackBackground" style="color:#bafc03">Room 2</h3>
+			<img class="center"  style="width:400px" style="height:400px" src="control room.webp" />
+
+			<h3 class="blackBackground" style="color:#bafc03">Room 3</h3>
+			<img class="center"  style="width:400px" style="height:400px" src="hallWay.webp" />
+
+            <section class="dark">
+                <h1 class="titleRadioButton">What room has a computer in it?</h1>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Room 1</span>
+                </label>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="correctAnswer" class="text">Room 2</span>
+                </label>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Room 3</span>
+                </label>
+            </section>
+        </form>
+        <form>
+			<h3 class="blackBackground" style="color:white">Next we need to find an input device
+			so we can tell the computer what to do!</h3>
+
+			<h3 class="blackBackground" style="color:#bafc03">Device 1</h3>
+			<img class="center"  style="width:300px" style="height:300px" src="monmon.png" />
+
+			<h3 class="blackBackground" style="color:#bafc03">Device 2</h3>
+			<img class="center"  style="width:300px" style="height:300px" src="headphones.jfif" />
+
+			<h3 class="blackBackground" style="color:#bafc03">Device 3</h3>
+			<img class="center"  style="width:300px" style="height:200px" src="keyboard.png" />
+
+            <section class="dark">
+                <h1 class="titleRadioButton">Which one is an input device (one that we can type on)?</h1>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Device 1</span>
+                </label>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Device 2</span>
+                </label>
+            
+                <label>
+                <input class="correctAnswer" type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Device 3</span>
+                </label>
+            </section>
+        </form>
+        <form>
+			<img class="center" style="width:300px" style="height:200px" src="monitor2.png" />
+			<h3 class="blackBackground" style="color:white">The text on the computer is invisable! We need to find a programming language that can add color!</h3>
+            <section class="dark">
+                <h1 class="titleRadioButton">What programming language designs websites? Adding color to them?</h1>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Python</span>
+                </label>
+            
+                <label>
+                <input class="correctAnswer" type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">CSS</span>
+                </label>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Java Script</span>
+                </label>
+            
+            </section>
+        </form>
+		<form>
+			<img class="center" style="width:450px" style="height:450px" src="coding.jpg" />
+			<h3 class="blackBackground" style="color:white">Now that we can see the text, we need to write a line of code that can debug. A tool that can help us!</h3>
+            <section class="dark">
+                <h1 class="titleRadioButton">What line of code helps debug a program. It also prints a string on a screen.</h1>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">style="purple"</span>
+                </label>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">function() => {};</span>
+                </label>
+            
+                <label>
+                <input class="correctAnswer" type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Console.log("Space Ship issue")</span>
+                </label>
+            
+            </section>
+        </form>
+		<form>
+			<img class="center" style="width:300px" style="height:300px" src="happcomputer.webp" />
+			<h3 class="blackBackground" style="color:white">We found the problem! To restart the ship we need to answer a riddle.</h3>
+            <section class="dark">
+                <h1 class="titleRadioButton">How do aliens keep their pants up?</h1>
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Tape!</span>
+                </label>
+            
+                <label>
+                <input class="correctAnswer" type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">With an asteroid belt!</span>
+                </label>
+            
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Lasers</span>
+                </label>
+            
+            </section>
+        </form>
+
+		<br>
+
+		<container class="checkTheAnswers"><button>Submit</button></container>
+
+		<h3 class="blackBackground" id="textCenter" style="color:white">
+			Once you succefully complete The Mission, collect your reward by clicking the button below!
+		</h3>
+
+		<div></div>
+
+		<container id="centerButtonButton" class="buttonSubmit"><button>Collect!</button></container>
 
 	</content>
 

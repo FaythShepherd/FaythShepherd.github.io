@@ -30,8 +30,8 @@ form.addEventListener('submit', (e) => {
 )
 
 const getNames = () => {
-    axios.post("http://localhost:5501/api/names", {.collectReward}).then( (response) => {
+    axios.post("http://localhost:5501/api/names", ('.collectReward')).then( (response) => {
         console.log(response);
-    }).catch(console.log) 
+    }).catch(console.log(response)) 
 };
 getNames()

@@ -5,6 +5,16 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 @font-face {
     font-family: 'spaceregular';
     src: url('space-webfont.woff2') format('woff2'),
@@ -100,6 +110,22 @@ p { font-family: 'WebFont', Arial, sans-serif; }
     margin-right: auto;
     width: 50%;
   }
+#center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  #centerButtonButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+#textCenter {
+  text-align: center;
+}
 
 .titleOfPage  { font-family: 'spaceregular', Arial, sans-serif; font-size: 90px;
 position: center;
@@ -109,12 +135,20 @@ padding: -40px;
 line-height: 160px;
 letter-spacing: 5px;}
 
-h2 {
+/* .subTitleOfPage  { font-family: 'spaceregular', Arial, sans-serif; font-size: 60px;
+  position: center;
+  text-align: center;
+  margin: 0px;
+  padding: -40px;
+  line-height: 160px;
+  letter-spacing: 5px;
+  color:#8a3ea3; 
+} */
+
+h2.subTitleOfPage {
     font-size: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    font-family: 'spaceregular';
+    color:#8a3ea3; 
 }
 
 h3 {
@@ -169,9 +203,9 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 15px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 22px;
     font-family: 'spaceregular';
     /* z-index: 10000; */
     /* top: 0px; */
@@ -196,7 +230,7 @@ body {
   }
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -205,7 +239,7 @@ body {
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 550px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -279,6 +313,30 @@ ul {
       grid: true;
     }
     browsers: last 2 versions
+  }
+
+  /* Submit Buttons */
+
+  .buttonSubmit {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #bb54de;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #4d225c;
+    font-family: 'robotomedium';
+  }
+  
+  .buttonSubmit:hover {background-color: #8a3ea3}
+  
+  .buttonSubmit:active {
+    background-color: #8a3ea3;
+    box-shadow: 0 5px #2b1233;
+    transform: translateY(4px);
   }
 
   /* Radio Buttons */
