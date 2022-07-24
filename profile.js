@@ -14,13 +14,13 @@
 //     alert('washing my face')
 // })
 
-const form = document.querySelector('form');
+const form = document.querySelector('#lastForm');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const correct = document.querySelectorAll('.correctAnswer');
     console.log(correct);
-    const allCorrect = Array(...correct).filter((element) => element.checked).length===1;
+    const allCorrect = Array(...correct).filter((element) => element.checked).length===3;
     console.log(allCorrect);
     const answerIndicator = document.createElement("div")
     answerIndicator.innerText = allCorrect? "you got the right the answer" : "Try again!"
@@ -29,9 +29,4 @@ form.addEventListener('submit', (e) => {
     }
 )
 
-const getNames = () => {
-    axios.post("http://localhost:5501/api/names", ('.collectReward')).then( (response) => {
-        console.log(response);
-    }).catch(console.log(response)) 
-};
-getNames()
+console.log("end of script");

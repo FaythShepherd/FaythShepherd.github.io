@@ -24,26 +24,36 @@
           <h1 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
             CONGRATULATIONS
         </h1>
-        <h2 class="blackBackground" style="color:white" id="center">
-           You saved the Space Cats!
+
+        <h2 class="blackBackground" id="textCenter" style="color:white" id="center">
+            You saved the Space Cats!
+         </h2>
+
+        <img class="center" style="width:300px" style="height:200px" src="happyCat.png"/>
+
+
+        <h2 class="blackBackground" id="textCenter" style="color:white" id="center">
+           They made it home safe!
         </h2>
 
-        <h3 class="blackBackground" style="color:white">
+        <img class="center" style="width:300px" style="height:200px" src="homeSafe.webp"/>
+
+        <h3 class="blackBackground" id="textCenter" style="color:white">
             Enter your name below for a surprise!
         </h3>
 
         <div class="formContainer">
-            <form action="action_page.php">
+            <form>
           
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name">
+              <input style="border:1px solid white" type="text" id="fname" name="firstname" placeholder="Your name">
           
-              <input type="submit" value="Submit">
+              <button class="collect" type="submit" value="Submit">Submit</button>
               <!-- <container class="buttonSubmit" class="checkTheAnswers"><button>submit</button></container> -->
           
             </form>
           </div>
         
-          <script src="./profile.js" defer></script>
+          <script src="./collectYouReward.js" defer></script>
     </body>
 </html>

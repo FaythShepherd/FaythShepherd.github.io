@@ -56,19 +56,19 @@
                 <h1 class="titleRadioButton">What room has a computer in it?</h1>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Room 1</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="correctAnswer" class="text">Room 2</span>
+                <span class="text">Room 2</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Room 3</span>
                 </label>
@@ -91,19 +91,19 @@
                 <h1 class="titleRadioButton">Which one is an input device (one that we can type on)?</h1>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Device 1</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Device 2</span>
                 </label>
             
                 <label>
-                <input class="correctAnswer" type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Device 3</span>
                 </label>
@@ -116,19 +116,19 @@
                 <h1 class="titleRadioButton">What programming language designs websites? Adding color to them?</h1>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Python</span>
                 </label>
             
                 <label>
-                <input class="correctAnswer" type="radio" name="dark">
+                <input id="inputRadio" class="correctAnswer" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">CSS</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Java Script</span>
                 </label>
@@ -142,19 +142,19 @@
                 <h1 class="titleRadioButton">What line of code helps debug a program. It also prints a string on a screen.</h1>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">style="purple"</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">function() => {};</span>
                 </label>
             
                 <label>
-                <input class="correctAnswer" type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Console.log("Space Ship issue")</span>
                 </label>
@@ -167,19 +167,19 @@
             <section class="dark">
                 <h1 class="titleRadioButton">How do aliens keep their pants up?</h1>
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Tape!</span>
                 </label>
             
                 <label>
-                <input class="correctAnswer" type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">With an asteroid belt!</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Lasers</span>
                 </label>
@@ -189,17 +189,17 @@
 
 		<br>
 
-		<container class="checkTheAnswers"><button>Submit</button></container>
+		<container class="checkTheAnswers"><button  id="centerButtonButton" class="buttonSubmit">Submit</button></container>
 
 		<h3 class="blackBackground" id="textCenter" style="color:white">
 			Once you succefully complete The Mission, collect your reward by clicking the button below!
 		</h3>
 
 		<div></div>
-
-		<container id="centerButtonButton" class="buttonSubmit"><button>Collect!</button></container>
-
-	</content>
+        
+        <container><a href="./collectYouReward.html" style="text-decoration: none"><button id="centerButtonButton" class="buttonSubmit">Collect!</button></a></container>
+	
+    </content>
 
 </body>
 </html>

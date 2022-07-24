@@ -45,19 +45,19 @@
                 <h1 class="titleRadioButton">Select the one that is a Computer Part!</h1>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Dog</span>
                 </label>
             
                 <label>
-                <input class="correctAnswer" type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Monitor</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">The Sun</span>
                 </label>
@@ -68,42 +68,42 @@
                 <h1 class="titleRadioButton">Select the one that is a NOT Computer Part!</h1>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Keyboard</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Computer Mouse</span>
                 </label>
             
                 <label>
-                <input class="correctAnswer" type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Carrot</span>
                 </label>
             </section>
         </form>
-        <form>
+        <form id="lastForm">
             <section class="dark">
                 <h1 class="titleRadioButton">Select the one that is a Computer Part!</h1>
             
                 <label>
-                <input class="correctAnswer" type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Motherboard</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Cat</span>
                 </label>
             
                 <label>
-                <input type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">T-shirt</span>
                 </label>
@@ -112,8 +112,9 @@
 
             <br>
 
-            <container id="centerButtonButton" class="buttonSubmit" class="checkTheAnswers"><button>Submit</button></container>
-
+            <button  id="centerButtonButton" class="buttonSubmit">Submit</button>
+            
+            <container class="checkTheAnswers"></container>
         </form>
 
         <h3 class="blackBackground" id="textCenter" style="color:white">

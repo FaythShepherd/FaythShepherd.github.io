@@ -431,7 +431,7 @@ ul {
   
   
   /* input */
-  input {
+  #inputRadio {
     opacity: 0;
     position: absolute;
     left: 50%;
@@ -489,29 +489,29 @@ ul {
   
   
   /* checked state */
-  input:checked+.design::before {
+  #inputCheckedForm:checked+.design::before {
     opacity: 1;
     transform: scale(.6);
   }
   
   
   /* other states */
-  input:hover+.design,
-  input:focus+.design {
+  #inputOtherForm:hover+.design,
+  #inputOtherFormTwo:focus+.design {
     border: 1px solid var(--primary);
   }
   
-  input:hover+.design:before,
-  input:focus+.design:before {
+  #inputForm:hover+.design:before,
+  #inputFormm:focus+.design:before {
     background: var(--primary);
   }
   
-  input:hover~.text {
+  #inputHoverText:hover~.text {
     color: var(--primary);
   }
   
-  input:focus+.design::after,
-  input:active+.design::after {
+  #inputFocus:focus+.design::after,
+  #inputActive:active+.design::after {
     opacity: .1;
     transform: scale(2.6);
   }
@@ -519,7 +519,7 @@ ul {
   /* FOR THE COLLECT REWARD FORM */
 
   /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+#inputText[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
@@ -531,7 +531,7 @@ input[type=text], select, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+#inputSubmit[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -541,7 +541,7 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+#inputSubmitSubmit[type=submit]:hover {
   background-color: #45a049;
 }
 
