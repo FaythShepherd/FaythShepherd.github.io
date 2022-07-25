@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>LessonTwo</title>
         <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
         <div class="topnav" id="myTopnav">
@@ -20,53 +21,51 @@
               <i class="fa fa-bars"></i>
             </a>
           </div>
-          <h1 class="titleOfPage" style="color:#bafc03">LESSON FOUR</h1>
-
-        <img src=""/>
+          <h1 class="titleOfPage" style="color:#bafc03">
+            LESSON FOUR
+        </h1>
         <h2 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
-            Time to CODE
+            Learn how to code!
         </h2>
 
-        <h3 class="blackBackground" style="color:white">
-           Learn how to write a line of JavaScript below and take the quiz!
-        </h3>
-
         <img class="center" src="helloWorld.PNG"/>
-        
+
         <h3 class="blackBackground" style="color:white">
             We are going to learn about a function called Console.log!
-         </h3>
+        </h3>
 
-         <img class="center" src="https://pbs.twimg.com/media/EY0vmehVAAAKGF5.png"/>
+        <img class="center" src="https://pbs.twimg.com/media/EY0vmehVAAAKGF5.png"/>
 
-         <h3 class="blackBackground" style="color:white">
+        <h3 class="blackBackground" style="color:white">
             Console.log is a great tool that is used in Java Script! It helps programers 
             check their code and fix it.
-         </h3>
+        </h3>
 
-         <h3 class="blackBackground" style="color:white">
+        <h3 class="blackBackground" style="color:white">
             When programmers fix errors in their code, this is called 'debugging'.
-         </h3>
+        </h3>
 
-         <img class="center" src="consoleLog.PNG"/>
+        <img class="center" src="consoleLog.PNG"/>
 
-         <h3 class="blackBackground" style="color:white">
+        <h3 class="blackBackground" style="color:white">
             Let's understand the two parts of the code in the picture above!
-         </h3>
+        </h3>
 
-         <img class="center" src="consoleLog2.PNG"/>
+        <img class="center" src="consoleLog2.PNG"/>
 
-         <img class="center" src="consoleLog3.PNG"/>
+        <img class="center" src="consoleLog3.PNG"/>
 
-         <h3 class="blackBackground" style="color:white">
+        <h3 class="blackBackground" style="color:white">
             Console.log(""); is a great tool to use!
-         </h3>
+        </h3>
 
-         <img class="center" style="width:250px" style="height:200px" src="spacceeeCat.PNG"/>
+        <img class="center" style="width:250px" style="height:200px" src="spacceeeCat.PNG"/>
 
-         <h3 class="blackBackground" style="color:white">
+        <h3 class="blackBackground" style="color:white">
             You now know how to write a line of code! Let's take the quiz and go save those Cats!
-         </h3>
+        </h3>
+
+        <div></div>
 
         <form>
             <section class="dark">
@@ -76,7 +75,7 @@
                 <label>
                 <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">NO!</span>
+                <span class="text">Nahh, it's not that great</span>
                 </label>
             
                 <label>
@@ -86,7 +85,7 @@
                 </label>
             
                 <label>
-                <input id="inputRadio"  type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">It's the worst tool :(</span>
                 </label>
@@ -97,9 +96,9 @@
                 <h1 class="titleRadioButton">What would console.log("Coding is cool!") print out?</h1>
             
                 <label>
-                <input id="inputRadio" type="radio" name="dark">
+                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">Hellllooo World!!</span>
+                <span class="text">Coding is cool!</span>
                 </label>
             
                 <label>
@@ -109,49 +108,47 @@
                 </label>
             
                 <label>
-                <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
+                <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">Coding is cool!</span>
+                <span class="text">Hello World!</span>
                 </label>
             </section>
         </form>
-        <form>
+        <form id="lastForm">
             <section class="dark">
                 <h1 class="titleRadioButton">What does debugging mean?</h1>
             
                 <label>
                 <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">Fixing erros in code</span>
+                <span class="text">Fixing errors in code</span>
                 </label>
             
                 <label>
                 <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">Hunting bugs in the forest</span>
+                <span class="text">Searching for bugs in the forest</span>
                 </label>
             
                 <label>
-                <input id="inputRadio" type="radio" name="dark">
+                <input type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Going to the shoe store</span>
                 </label>
             
             </section>
+
+            <br>
+
+            <button id="centerButtonButton" class="buttonSubmit">Submit</button>
+            
+            <container class="checkTheAnswers answerColor"></container>
         </form>
 
-        <container id="centerButtonButton" class="buttonSubmit" class="checkTheAnswers"><button>Submit</button></container>
-
-        <br>
-
         <h3 class="blackBackground" id="textCenter" style="color:white">
-            You are a trained computer genius.
+            When you finish - go to The Mission!
         </h3>
-
-        <h3 class="blackBackground" id="textCenter" style="color:white">
-            You are ready for The Mission!
-        </h3>
-
-        <script scr="./profile.js" defer></script>
+        
+          <script src="./profile.js" defer></script>
     </body>
 </html>

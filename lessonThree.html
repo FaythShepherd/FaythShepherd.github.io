@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>LessonTwo</title>
         <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
         <div class="topnav" id="myTopnav">
@@ -20,9 +21,10 @@
               <i class="fa fa-bars"></i>
             </a>
           </div>
-          <h1 class="titleOfPage" style="color:#bafc03">LESSON THREE</h1>
-
-          <h2 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
+          <h1 class="titleOfPage" style="color:#bafc03">
+            LESSON THREE
+        </h1>
+        <h2 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
             Programming Languages
         </h2>
 
@@ -31,64 +33,78 @@
         </h3>
 
         <h3 class="blackBackground" style="color:white">
-           Learn about some languages and then take the quiz below!
+            Learn about some languages and then take the quiz below!
         </h3>
 
-        <img class="center" src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw"/>
-        
+        <section>
+            <img class="center" style="width:300px" style="height:300px" src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw"/>
+        </section>
+
         <h3 class="blackBackground" style="color:white">
             This language is called "HTML"
-         </h3>
+        </h3>
 
-         <h3 class="blackBackground" style="color:white">
+        <h3 class="blackBackground" style="color:white">
             It is used to create websites! Like this one!
-         </h3>
+        </h3>
 
-         <div></div>
+        <div></div>
 
-        <img class="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAjpVHT4u4BeOt_B-fy-aBKLfvHFiyLV0wiQ&usqp=CAU"/>
-        
+        <section>
+            <img class="center" style="width:300px" style="height:300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAjpVHT4u4BeOt_B-fy-aBKLfvHFiyLV0wiQ&usqp=CAU"/>
+        </section>
+
         <h3 class="blackBackground" style="color:white">
             This language is called "CSS"
-         </h3>
+        </h3>
 
-         <h3 class="blackBackground" style="color:white">
+        <h3 class="blackBackground" style="color:white">
             It helps us design websites and add color!
-         </h3>
+        </h3>
 
-          <div></div>
+        <div></div>
 
-         <img class="center" src="data:image/png;base64,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"/>
-         
-         <h3 class="blackBackground" style="color:white">
-             This language is called "Java Script"
-          </h3>
-          
-          <h3 class="blackBackground" style="color:white">
-             It allows the website to be interactive and do cool functions!
-          </h3>
+        <section>
+            <img class="center" style="width:300px" style="height:300px" src="data:image/png;base64,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"/>
+        </section>
 
-          <div></div>
+        <h3 class="blackBackground" style="color:white">
+            This language is called "Java Script"
+        </h3>
 
-         <img class="center" src="data:image/png;base64,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"/>
-         
-         <h3 class="blackBackground" style="color:white">
-             This language is called "Python"
-          </h3>
-          
-          <h3 class="blackBackground" style="color:white">
-             This language allows us to program calculators, process data and more!
-          </h3>
+        <h3 class="blackBackground" style="color:white">
+            It allows the website to be interactive and do cool functions!
+        </h3>
 
-                   <img class="center" src="data:image/png;base64,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"/>
-         
-         <h3 class="blackBackground" style="color:white">
-             This language is called "Java"
-          </h3>
-          
-          <h3 class="blackBackground" style="color:white">
-             Like Python, it can write programs. It can also write apps that can run on phones!
-          </h3>
+        <div></div>
+
+        <section>
+            <img class="center" style="width:300px" style="height:300px" src="data:image/png;base64,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"/>
+        </section>
+
+        <h3 class="blackBackground" style="color:white">
+            This language is called "Python"
+        </h3>
+
+        <h3 class="blackBackground" style="color:white">
+            This language allows us to program calculators, process data and more!
+        </h3>
+
+        <div></div>
+
+        <section>
+            <img class="center" style="width:300px" style="height:300px" src="data:image/png;base64,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"/>
+        </section>
+
+        <h3 class="blackBackground" style="color:white">
+            This language is called "Java"
+        </h3>
+
+        <h3 class="blackBackground" style="color:white">
+            Like Python, it can write programs. It can also write apps that can run on phones! The logo also looks like a hot chocolate! :)
+        </h3>
+
+        <div></div>
 
         <form>
             <section class="dark">
@@ -127,7 +143,7 @@
                 <label>
                 <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">CSS</span>
+                <span class="text">Java Script</span>
                 </label>
             
                 <label>
@@ -137,7 +153,7 @@
                 </label>
             </section>
         </form>
-        <form>
+        <form id="lastForm">
             <section class="dark">
                 <h1 class="titleRadioButton">What language can program a calculator?</h1>
             
@@ -150,27 +166,28 @@
                 <label>
                 <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">CSS</span>
-                </label>
-            
-                <label>
-                <input id="inputRadio" type="radio" name="dark">
-                <span class="design"></span>
                 <span class="text">HTML</span>
                 </label>
             
+                <label>
+                <input type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Spanish</span>
+                </label>
+            
             </section>
+
+            <br>
+
+            <button id="centerButtonButton" class="buttonSubmit">Submit</button>
+            
+            <container class="checkTheAnswers answerColor"></container>
         </form>
 
-        <br>
-            
-            <container id="centerButtonButton" class="buttonSubmit" class="checkTheAnswers"><button>Submit</button></container>
-
-
-            <h3 class="blackBackground" id="textCenter" style="color:white">
-				When you finish - go to Lesson Three!
-			</h3>
-
-        <script scr="./profile.js" defer></script>
+        <h3 class="blackBackground" id="textCenter" style="color:white">
+            When you finish - go to Lesson Four!
+        </h3>
+        
+          <script src="./profile.js" defer></script>
     </body>
 </html>

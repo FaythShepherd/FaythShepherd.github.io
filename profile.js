@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
     const allCorrect = Array(...correct).filter((element) => element.checked).length===3;
     console.log(allCorrect);
     const answerIndicator = document.createElement("div")
-    answerIndicator.innerText = allCorrect? "you got the right the answer" : "Try again!"
+    answerIndicator.innerText = allCorrect? "You got the right answers!" : "Try again!"
     const lessonOneAnswers = document.querySelector(".checkTheAnswers")
     lessonOneAnswers.appendChild(answerIndicator)
     }

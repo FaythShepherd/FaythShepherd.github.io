@@ -4,3 +4,5 @@ const getNames = () => {
     }).catch(console.log) 
 };
 getNames()
+
+console.log("end of script");

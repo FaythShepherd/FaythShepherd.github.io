@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="collectReward.css" type="text/css" charset="utf-8" />
     </head>
     <body>
         <div class="topnav" id="myTopnav">
@@ -24,31 +24,43 @@
             ABOUT SPACE CATS
         </h1>
 
-        <img src=""/>
-        <section>
-            <h2 style="color:white">Contact Us</h2>
-            <form style="color:white" id="contact">
-                Your name:
-                <input style="color:white" type="text">
-    
-                Message:
-                <input type="textarea">
-    
-                <input type="submit">
+        <h2 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
+            PURPOSE
+        </h2>
+
+        <h3 class="blackBackground aboutPage" style="color:white">
+            “Save the Space Cats!” is a website designed for elementary students ages eight to twelve about basic computer science. 
+            Specifically it teaches kids four lessons that include- computer parts and their names, types of computer parts, programming languages and how to write a line of code. 
+            Computer Science is a growing field and we need to give the next generation the best tools to succeed. 
+        </h3>
+
+        <br>
+
+        <img class="center" style="width:300px" style="height:200px" src="girl.jpeg"/>
+
+        <br>
+
+        <h3 class="blackBackground aboutPage" style="color:white">
+           Sign up below to recieve more information and coding courses for your child!
+        </h3>
+
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">Email</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your email..">          
+          
+              <input type="submit" value="Submit">
+          
             </form>
-    
-            <form id="contact">
-    
-                How did you find us? 
-                
-                <label for="Google">Google</label><input type="checkbox" id="google" value="google"/>
-                <label for="A Friend">A Friend</label><input type="checkbox" id="friend" value="friend"/>
-                <label for="Other">Other</label><input type="checkbox" id="other" value="other"/>
-                <button type="submit">Submit</button>
-                
-            </form>
-    
-        <button class="Yellow" id="color">What Color is Lady Kittens eyes?</button>
-        <script scr="./profile.js" defer></script>
+          </div>
+
+        <script scr="./collectYouReward.js" defer></script>
     </body>
 </html>

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="collectReward.css" type="text/css" charset="utf-8" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
@@ -38,21 +38,43 @@
 
         <img class="center" style="width:300px" style="height:200px" src="homeSafe.webp"/>
 
-        <h3 class="blackBackground" id="textCenter" style="color:white">
-            Enter your name below for a surprise!
+        <h3 class="blackBackground aboutPage" id="textCenter" style="color:white">
+            Enter your name below, then right click and save your prize! You 
+            can then print it and proudly remember your achievement! You can also click the delete button 
+            and put in a new name if you want!
         </h3>
 
-        <div class="formContainer">
+<div class="container">
+  <form>
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your name here">
+
+    <button type="submit" value="Submit">Submit</button>
+
+    <button type="delete" value="Delete">Delete</button>
+
+    <container id="pleaseShow" class="collectReward answerColor"></container>
+    <!-- <container class="answerColor"></container> -->
+
+  </form>
+</div>
+
+        <!-- <div class="formContainer" id="textCenter" style="color:black">
             <form>
           
               <label for="fname">Name</label>
-              <input style="border:1px solid white" type="text" id="fname" name="firstname" placeholder="Your name">
+              <input style="border:1px solid white" type="text" id="fname" class="inputSubmit inputSubmitSubmit inputText" name="firstname" placeholder="Your name">
           
-              <button class="collect" type="submit" value="Submit">Submit</button>
-              <!-- <container class="buttonSubmit" class="checkTheAnswers"><button>submit</button></container> -->
+              <container><button class="collectReward" type="submit" value="Submit">Submit</button></container>
+            <container class="buttonSubmit" class="checkTheAnswers"><button>submit</button></container>
           
+              <img class="center" src="Certificate 11x8.5 in.png" />
+
+              <h1>HEY</h1>
+
             </form>
-          </div>
+          </div> -->
         
           <script src="./collectYouReward.js" defer></script>
     </body>

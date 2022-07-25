@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>About</title>
-	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
-</head>
-<body>
-	<div class="topnav" id="myTopnav">
-		<a href="./home.html">Home</a>
-		<a href="./lessonOne.html">Lesson 1</a>
-		<a href="./lessonTwo.html" class="active">Lesson 2</a>
-		<a href="./lessonThree.html">Lesson 3</a>
-		<a href="./lessonFour.html">Lesson 4</a>
-		<a href="./theMission.html">The Mission</a>
-		<a href="./about.html">AbouT</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		  <i class="fa fa-bars"></i>
-		</a>
-	  </div>
-	
-	  <h1 class="titleOfPage" style="color:#bafc03">
-		LESSON TWO </h1>
-		<h2 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LessonTwo</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="./home.html">Home</a>
+            <a href="./lessonOne.html">Lesson 1</a>
+            <a href="./lessonTwo.html"  class="active">Lesson 2</a>
+            <a href="./lessonThree.html">Lesson 3</a>
+            <a href="./lessonFour.html">Lesson 4</a>
+            <a href="./theMission.html">The Mission</a>
+            <a href="./about.html">AbouT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <h1 class="titleOfPage" style="color:#bafc03">
+            LESSON TWO
+        </h1>
+        <h2 class="blackBackground" id="textCenter" style="font-family: 'spaceregular', Arial, sans-serif; font-size: 40px; color:#8a3ea3; letter-spacing: 4px;">
             Input VS Output VS Storage
         </h2>
 
@@ -29,15 +33,14 @@
         </h3>
 
         <h3 class="blackBackground" style="color:white">
-           Learn which computer parts are input, output or a storage!
-		Then take the quiz below!
+            Learn which computer parts are input, output or a storage!
+            Then take the quiz below!
         </h3>
 
-		<section>
+        <section>
             <img class="center" src="https://thumbs.dreamstime.com/b/print-197254303.jpg"/>
         </section>
-
-		<form>
+        <form>
             <section class="dark">
 
                 <h1 class="titleRadioButton">Which one is an Input device?</h1>
@@ -51,7 +54,7 @@
                 <label>
                 <input id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">Speaker</span>
+                <span class="text">Monitor</span>
                 </label>
             
                 <label>
@@ -60,8 +63,8 @@
                 <span class="text">Printer</span>
                 </label>
             </section>
-		</form>
-		<form>				
+        </form>
+        <form>
             <section class="dark">
                 <h1 class="titleRadioButton">Which device is an Output?</h1>
             
@@ -83,38 +86,42 @@
                 <span class="text">Speaker</span>
                 </label>
             </section>
-		</form>
-		<form>
+        </form>
+        <form id="lastForm">
             <section class="dark">
                 <h1 class="titleRadioButton">Which one is a storage device?</h1>
             
                 <label>
                 <input class="correctAnswer" id="inputRadio" type="radio" name="dark">
                 <span class="design"></span>
-                <span class="text">Flash Drive</span>
+                <span class="text">Disc</span>
                 </label>
             
                 <label>
                 <input id="inputRadio" type="radio" name="dark">
+                <span class="design"></span>
+                <span class="text">Computer Mouse</span>
+                </label>
+            
+                <label>
+                <input type="radio" name="dark">
                 <span class="design"></span>
                 <span class="text">Speaker</span>
                 </label>
             
-                <label>
-                <input id="inputRadio" type="radio" name="dark">
-                <span class="design"></span>
-                <span class="text">Webcam</span>
-                </label>
-            
             </section>
-		</form>
 
-		<br>
+            <br>
+
+            <button id="centerButtonButton" class="buttonSubmit">Submit</button>
             
-            <container id="centerButtonButton" class="buttonSubmit" class="checkTheAnswers"><button>Submit</button></container>
+            <container class="checkTheAnswers answerColor"></container>
+        </form>
 
-			<h3 class="blackBackground" id="textCenter" style="color:white">
-				When you finish - go to Lesson Three!
-			</h3>
-</body>
+        <h3 class="blackBackground" id="textCenter" style="color:white">
+            When you finish - go to Lesson Three!
+        </h3>
+        
+          <script src="./profile.js" defer></script>
+    </body>
 </html>
