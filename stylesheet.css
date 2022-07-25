@@ -130,8 +130,8 @@ p { font-family: 'WebFont', Arial, sans-serif; }
 .titleOfPage  { font-family: 'spaceregular', Arial, sans-serif; font-size: 90px;
 position: center;
 text-align: center;
-margin: 0px;
-padding: -40px;
+/* margin: 0px;
+padding: 0px; */
 line-height: 160px;
 letter-spacing: 5px;
 }
@@ -150,7 +150,7 @@ h2.subTitleOfPage {
     font-size: 35px;
     font-family: 'spaceregular';
     color:#8a3ea3; 
-    
+    padding: 5px;
 }
 
 h3 {
@@ -163,6 +163,7 @@ h3 {
 
 h3.aboutPage {
   font-size: 30px;
+  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -368,8 +369,8 @@ ul {
     justify-content: center;
     align-items: center;
   
-    margin: 20px;
-    padding: 20px;
+    margin: 0px;
+    padding: 0px;
   
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   }
@@ -435,7 +436,7 @@ ul {
     align-items: center;
     flex-wrap: nowrap;
   
-    margin: 20px 20px;
+    margin: 20px 0px;
   
     cursor: pointer;
     position: relative;
@@ -529,5 +530,3 @@ ul {
   }
 
   /* end of radio buttons */
-
-  /* FOR THE COLLECT REWARD FORM */

@@ -160,6 +160,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    font-family: 'robotomedium'
 }
 
 body {
@@ -352,7 +353,7 @@ ul {
 
   /* Contact Form Styling */
 
-  body {font-family: Arial, Helvetica, sans-serif;}
+  body.font {font-family: 'robotomedium';}
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
@@ -367,7 +368,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #bb54de;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -376,11 +377,14 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #8a3ea3;
 }
 
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }

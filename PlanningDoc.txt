@@ -1,4 +1,13 @@
 Save the Space Cats
+
+MVP features
+-user can select questions
+-user can click button and see results from their answers
+-user can enter their name and see is posted on a certificate
+-user can enter their info and be added to a emailing list
+
+
+TO-Do
 -create Nav with 4 lessons, the mission, about page
 -in total have 7 pages- home, lessons 1-4, the mission, about and reward page
 -have three question quizs on each lesson and then 5 questions on the mission
