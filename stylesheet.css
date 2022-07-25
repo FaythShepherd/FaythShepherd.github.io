@@ -170,6 +170,10 @@ h3.aboutPage {
   width: 75%;
 }
 
+.columnPhotos {
+  column-count: 3;
+}
+
 body {
     background-image: url("https://cdn.wallpapersafari.com/1/97/co341S.jpg");
       padding: .2rem;

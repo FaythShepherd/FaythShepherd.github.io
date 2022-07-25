@@ -154,6 +154,15 @@ h2.subTitleOfPage {
     color:#8a3ea3; 
 }
 
+h3.aboutPage {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
 h3 {
     font-size: 30px;
     display: block;
@@ -365,26 +374,38 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  color:black;
 }
 
 input[type=submit] {
-  background-color: #bb54de;
-  color: white;
+  background-color: #bafc03;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'robotomedium';
 }
 
 input[type=submit]:hover {
-  background-color: #8a3ea3;
+  background-color: #6e9600;
 }
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #333;
   padding: 20px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  color: #c1d980;
+}
+
+.columnPhotos {
+    column-count: 3;
+  }
+
+.textWhiteColor {
+    color:white;
+    font-family: 'robotomedium';
 }

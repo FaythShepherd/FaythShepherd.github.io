@@ -13,7 +13,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 
 // modules.exports = {
 //     seed: (req, res) => {
-//         Sequelize.query(`
+//         sequelize.query(`
 //         create table sc_users (
 //             user_id serial primary key,
 //             first_name varchar(100),
