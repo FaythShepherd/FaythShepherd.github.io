@@ -113,6 +113,26 @@ p { font-family: 'WebFont', Arial, sans-serif; }
     margin-right: auto;
     width: 50%;
   }
+  .centerCertificate {
+    color: black;
+    font-size: 38px;
+    position: absolute;
+    width: 50%;
+    right: 25%;
+    top: 20px;
+  }
+  
+  #certificateContainer {
+      height:370px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+  }
+  strong {
+      z-index: 1;
+  }
 #center {
     display: block;
     margin-left: auto;
@@ -406,6 +426,6 @@ input[type=submit]:hover {
   }
 
 .textWhiteColor {
-    color:white;
+    color:#c1d980;
     font-family: 'robotomedium';
 }
