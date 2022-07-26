@@ -121,6 +121,20 @@ p { font-family: 'WebFont', Arial, sans-serif; }
     right: 25%;
     top: 20px;
   }
+
+  .comment {
+    color:#c1d980;
+    font-size: 30px;
+    font-family: 'robotomedium'; 
+    border-radius: 30px;
+    background-color: #333;
+    padding: 20px;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   #certificateContainer {
       height:370px;
